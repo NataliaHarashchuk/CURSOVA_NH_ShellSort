@@ -1,0 +1,11 @@
+E:\OP\CURSOVA_NH\bin\Debug\CURSOVA_NH.exe.config
+E:\OP\CURSOVA_NH\bin\Debug\CURSOVA_NH.exe
+E:\OP\CURSOVA_NH\bin\Debug\CURSOVA_NH.pdb
+E:\OP\CURSOVA_NH\obj\Debug\CURSOVA_NH.csproj.AssemblyReference.cache
+E:\OP\CURSOVA_NH\obj\Debug\CURSOVA_NH.MainForm.resources
+E:\OP\CURSOVA_NH\obj\Debug\CURSOVA_NH.Properties.Resources.resources
+E:\OP\CURSOVA_NH\obj\Debug\CURSOVA_NH.csproj.GenerateResource.cache
+E:\OP\CURSOVA_NH\obj\Debug\CURSOVA_NH.csproj.CoreCompileInputs.cache
+E:\OP\CURSOVA_NH\obj\Debug\CURSOVA_NH.exe
+E:\OP\CURSOVA_NH\obj\Debug\CURSOVA_NH.pdb
+E:\OP\CURSOVA_NH\obj\Debug\CURSOVA_NH.SortingVisualizer.resources
