@@ -26,12 +26,12 @@ namespace CURSOVA_NH
         {
             List<int> gaps = new List<int>() { 1 };
             int i = 0;
-            int g = 0;
-            while (g < len)
+            int gap = 0;
+            while (gap < len)
             {
                 i++;
-                g = (int)(Math.Pow(4, i) + 3 * Math.Pow(2, i - 1) + 1);
-                gaps.Add(g);
+                gap = (int)(Math.Pow(4, i) + 3 * Math.Pow(2, i - 1) + 1);
+                gaps.Add(gap);
             }
             gaps.Reverse();
             return gaps;
@@ -54,12 +54,12 @@ namespace CURSOVA_NH
         {
             List<int> gaps = new List<int>() { 1 };
             int i = 0;
-            int g = 0;
-            while (g < len)
+            int gap = 0;
+            while (gap < len)
             {
                 i++;
-                g = (int)Math.Ceiling((9 * Math.Pow(9.0 / 4, i) - 4) * 1 / 5);
-                gaps.Add(g);
+                gap = (int)Math.Ceiling((9 * Math.Pow(9.0 / 4, i) - 4) * 1 / 5);
+                gaps.Add(gap);
             }
             gaps.Reverse();
             return gaps;
@@ -135,7 +135,7 @@ namespace CURSOVA_NH
         private readonly Brush whiteBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
         private readonly Brush blackBrush = new System.Drawing.SolidBrush(System.Drawing.Color.Black);
 
-        public async void Animate(int[] array, Graphics g, int maxHeight, int sortOrder, int sortSequence, int zeroLine, float rectWidth, int rectangleGap)
+        public async void Animate(int[] array, Graphics graph, int maxHeight, int sortOrder, int sortSequence, int zeroLine, float rectWidth, int rectangleGap)
         {
             int len = array.Length;
             List<int> gaps = new List<int>();
@@ -182,15 +182,15 @@ namespace CURSOVA_NH
 
                     while (j >= gap && comparisonFunction(array[j - gap], temp))
                     {
-                        DrawRectangle(g, j, array[j], maxHeight, zeroLine, rectWidth, rectangleGap, blackBrush, MaxInArray);
+                        DrawRectangle(graph, j, array[j], maxHeight, zeroLine, rectWidth, rectangleGap, blackBrush, MaxInArray);
                         array[j] = array[j - gap];                        
-                        DrawRectangle(g, j, array[j], maxHeight, zeroLine, rectWidth, rectangleGap, whiteBrush, MaxInArray);
+                        DrawRectangle(graph, j, array[j], maxHeight, zeroLine, rectWidth, rectangleGap, whiteBrush, MaxInArray);
                         j -= gap;
                     }
                     
-                    DrawRectangle(g, j, array[j], maxHeight, zeroLine, rectWidth, rectangleGap, blackBrush, MaxInArray);
+                    DrawRectangle(graph, j, array[j], maxHeight, zeroLine, rectWidth, rectangleGap, blackBrush, MaxInArray);
                     array[j] = temp;
-                    DrawRectangle(g, j, array[j], maxHeight, zeroLine, rectWidth, rectangleGap, whiteBrush, MaxInArray);
+                    DrawRectangle(graph, j, array[j], maxHeight, zeroLine, rectWidth, rectangleGap, whiteBrush, MaxInArray);
                     await Task.Delay(100);
                 }
 

@@ -250,9 +250,9 @@
             this.SortingShellSequence.Controls.Add(this.radioButtonDortFibonacci);
             this.SortingShellSequence.Controls.Add(this.radioButtonSortSedgwick);
             this.SortingShellSequence.Controls.Add(this.radioButtonSortClassic);
-            this.SortingShellSequence.Location = new System.Drawing.Point(289, 55);
+            this.SortingShellSequence.Location = new System.Drawing.Point(282, 55);
             this.SortingShellSequence.Name = "SortingShellSequence";
-            this.SortingShellSequence.Size = new System.Drawing.Size(200, 154);
+            this.SortingShellSequence.Size = new System.Drawing.Size(216, 154);
             this.SortingShellSequence.TabIndex = 1;
             this.SortingShellSequence.TabStop = false;
             this.SortingShellSequence.Text = "Вид сортування Шелла";
